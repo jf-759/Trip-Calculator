@@ -5,7 +5,18 @@
     <title>Travel Time Calculator</title>
     <link rel = "stylesheet" href = "./style.css">
 </head>
-<div class="centerText"><h1>Travel Time Calculator</h1></div>
+
+<div class="centerText">
+    <h1>Travel Time Calculator</h1></div>
+</div>
+<div class="introText">
+    <h4>Hello! Use this calculator to calculate how 
+        much time it takes you to get somewhere. If you 
+        place a distance in the Travel Distance box, it will be 
+        calculated in miles per hour depending on which vehicle
+        you choose to fly in. The speed of each vehicle is based
+        off of the average speed. </h4>
+</div>
 
 <body>
     <div class = "travelContainer">
@@ -18,10 +29,11 @@
                 <input type= "text" id="travelDistance" name = "travelDistance" placeholder="e.g., 215, 430, 525, etc. " required>
             </div>
             
-            <div class = "travelSpeed">
-                <label for = "travelSpeed"> 
-                    <h2> Rate per Hour: </h2></label>
-                <select id = "travelSpeed" name = "travelSpeed" required>
+            <div class = "travelSpeedUnit">
+                <label for = "travelSpeedUnit"> 
+                    <h2> Speed per Hour: </h2>
+                </label>
+                <select id = "travelSpeedUnit" name = "travelSpeedUnit" required>
                     <option value = "mph"> Miles</option>
                     <option value = "km"> Kilometers</option>
                 </select>
@@ -31,7 +43,7 @@
             <div class = "transportationType">
                 <label for = "transportationType"> 
                     <h2> Transportation Mode: </h2>
-                    </label>
+                </label>
                 <select id = "transportationType" name = "transportationType" required>
                     <option value = "flight"> flight </option>
                     <option value = "car"> car </option>
@@ -44,16 +56,11 @@
                 </select>
             </div>
 
-            <button type = "submit">Calculate</button>
+            <button type = "button" id="calculateButton">Calculate</button>
 
             <div class = "timeTraveled">
-
-             <!-- Results will be displayed here -->
-
                 <h2> Time Traveled: </h2>
                 <div id="displayTimeTraveled"></div>
-                <!-- <div id = "display"></div> -->
-
             </div>
 
         </form>
