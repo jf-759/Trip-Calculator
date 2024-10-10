@@ -62,22 +62,7 @@ function updateDisplay() {
       display.innerHTML = "Please select a valid speed unit (mph or km)."
     }
     
-}
-
-
-// travelSpeedUnit.addEventListener('change', (e) => {
-
-//   e.preventDefault()
-//   console.log('Selected travel speed unit: ', event.target.value)
-//   updateDisplay()
-// })
-
-// transportationType.addEventListener('change', (e) => {
-  
-//   e.preventDefault()
-//   console.log('Selected transportation mode:', event.target.value)
-//   updateDisplay()
-// })
+  }
 
 calculateButton.addEventListener('click', (e) => {
 
