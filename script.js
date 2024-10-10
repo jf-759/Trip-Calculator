@@ -65,23 +65,23 @@ function updateDisplay() {
 }
 
 
-travelSpeedUnit.addEventListener('change', (event) => {
+// travelSpeedUnit.addEventListener('change', (e) => {
 
-  event.preventDefault()
-  console.log('Selected travel speed unit: ', event.target.value)
-  updateDisplay()
-})
+//   e.preventDefault()
+//   console.log('Selected travel speed unit: ', event.target.value)
+//   updateDisplay()
+// })
 
-transportationType.addEventListener('change', (event) => {
+// transportationType.addEventListener('change', (e) => {
   
-  event.preventDefault()
-  console.log('Selected transportation mode:', event.target.value)
-  updateDisplay()
-})
+//   e.preventDefault()
+//   console.log('Selected transportation mode:', event.target.value)
+//   updateDisplay()
+// })
 
-calculateButton.addEventListener('click', (event) => {
+calculateButton.addEventListener('click', (e) => {
 
   console.log('clicked after travel speed unit and transportation type have been selected', event.target.value)
-  event.preventDefault()
+  e.preventDefault()
   updateDisplay()
 })
